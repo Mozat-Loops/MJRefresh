@@ -1,3 +1,11 @@
+
+## For Loops Developers
+
+You can find more details [here](https://github.com/Mozat-Loops/MJRefresh/blob/master/README-LOOPS.md)
+
+
+--------
+
 ![(logo)](http://images.cnitblog.com/blog2015/497279/201505/051004492043385.png)
 ## MJRefresh
 * An easy way to use pull-to-refresh
