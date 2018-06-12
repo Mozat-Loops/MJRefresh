@@ -92,6 +92,10 @@
 		2DB2EA271BECBE6700D58F6A /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB2EA121BECBE6700D58F6A /* UIScrollView+MJExtension.m */; };
 		2DB2EA281BECBE6700D58F6A /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB2EA141BECBE6700D58F6A /* UIScrollView+MJRefresh.m */; };
 		2DB2EA291BECBE6700D58F6A /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB2EA161BECBE6700D58F6A /* UIView+MJExtension.m */; };
+		CD401D5020CF7BCD009E7E4A /* MLRefreshDotsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD401D4A20CF7BCD009E7E4A /* MLRefreshDotsView.m */; };
+		CD401D5120CF7BCD009E7E4A /* MLLogoRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD401D4C20CF7BCD009E7E4A /* MLLogoRefreshHeader.m */; };
+		CD401D5220CF7BCD009E7E4A /* MLDotsRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD401D4D20CF7BCD009E7E4A /* MLDotsRefreshHeader.m */; };
+		CD401D5320CF7BCD009E7E4A /* MLDotsRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CD401D4F20CF7BCD009E7E4A /* MLDotsRefreshFooter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +212,15 @@
 		2DB2EA141BECBE6700D58F6A /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		2DB2EA151BECBE6700D58F6A /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		2DB2EA161BECBE6700D58F6A /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		CD401D4720CF7BCD009E7E4A /* MLLogoRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLogoRefreshHeader.h; sourceTree = "<group>"; };
+		CD401D4820CF7BCD009E7E4A /* MLRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLRefresh.h; sourceTree = "<group>"; };
+		CD401D4920CF7BCD009E7E4A /* MLDotsRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLDotsRefreshFooter.h; sourceTree = "<group>"; };
+		CD401D4A20CF7BCD009E7E4A /* MLRefreshDotsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLRefreshDotsView.m; sourceTree = "<group>"; };
+		CD401D4B20CF7BCD009E7E4A /* MLDotsRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLDotsRefreshHeader.h; sourceTree = "<group>"; };
+		CD401D4C20CF7BCD009E7E4A /* MLLogoRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLogoRefreshHeader.m; sourceTree = "<group>"; };
+		CD401D4D20CF7BCD009E7E4A /* MLDotsRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLDotsRefreshHeader.m; sourceTree = "<group>"; };
+		CD401D4E20CF7BCD009E7E4A /* MLRefreshDotsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLRefreshDotsView.h; sourceTree = "<group>"; };
+		CD401D4F20CF7BCD009E7E4A /* MLDotsRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLDotsRefreshFooter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +404,7 @@
 		2DB2E9EA1BECBE6700D58F6A /* MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				CD401D4620CF7BCD009E7E4A /* MLRefresh */,
 				2DB2E9EB1BECBE6700D58F6A /* Base */,
 				2DB2E9F61BECBE6700D58F6A /* Custom */,
 				2DB2EA0D1BECBE6700D58F6A /* MJRefresh.bundle */,
@@ -481,6 +495,22 @@
 				2DB2EA0C1BECBE6700D58F6A /* MJRefreshStateHeader.m */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		CD401D4620CF7BCD009E7E4A /* MLRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				CD401D4920CF7BCD009E7E4A /* MLDotsRefreshFooter.h */,
+				CD401D4F20CF7BCD009E7E4A /* MLDotsRefreshFooter.m */,
+				CD401D4B20CF7BCD009E7E4A /* MLDotsRefreshHeader.h */,
+				CD401D4D20CF7BCD009E7E4A /* MLDotsRefreshHeader.m */,
+				CD401D4720CF7BCD009E7E4A /* MLLogoRefreshHeader.h */,
+				CD401D4C20CF7BCD009E7E4A /* MLLogoRefreshHeader.m */,
+				CD401D4820CF7BCD009E7E4A /* MLRefresh.h */,
+				CD401D4E20CF7BCD009E7E4A /* MLRefreshDotsView.h */,
+				CD401D4A20CF7BCD009E7E4A /* MLRefreshDotsView.m */,
+			);
+			path = MLRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -677,12 +707,15 @@
 			files = (
 				2DB2EA181BECBE6700D58F6A /* MJRefreshBackFooter.m in Sources */,
 				2D4698861D0EE6A400CB8025 /* NSBundle+MJRefresh.m in Sources */,
+				CD401D5120CF7BCD009E7E4A /* MLLogoRefreshHeader.m in Sources */,
+				CD401D5320CF7BCD009E7E4A /* MLDotsRefreshFooter.m in Sources */,
 				2DB2EA1A1BECBE6700D58F6A /* MJRefreshFooter.m in Sources */,
 				2D9BEB0F1BB15F4A00AED473 /* MJDIYHeader.m in Sources */,
 				2D9BEB181BB15F4A00AED473 /* MJTableViewController.m in Sources */,
 				2DB2EA261BECBE6700D58F6A /* MJRefreshConst.m in Sources */,
 				2D9BEB0A1BB15F4A00AED473 /* MJChiBaoZiFooter.m in Sources */,
 				2D9BEB121BB15F4A00AED473 /* MJExampleWindow.m in Sources */,
+				CD401D5020CF7BCD009E7E4A /* MLRefreshDotsView.m in Sources */,
 				2DB2EA221BECBE6700D58F6A /* MJRefreshGifHeader.m in Sources */,
 				2D9BEB131BB15F4A00AED473 /* MJNavigationController.m in Sources */,
 				2DB2EA271BECBE6700D58F6A /* UIScrollView+MJExtension.m in Sources */,
@@ -690,6 +723,7 @@
 				2DB2EA1C1BECBE6700D58F6A /* MJRefreshAutoGifFooter.m in Sources */,
 				2DB2EA231BECBE6700D58F6A /* MJRefreshNormalHeader.m in Sources */,
 				2DB2EA191BECBE6700D58F6A /* MJRefreshComponent.m in Sources */,
+				CD401D5220CF7BCD009E7E4A /* MLDotsRefreshHeader.m in Sources */,
 				2D9BEB0E1BB15F4A00AED473 /* MJDIYBackFooter.m in Sources */,
 				2D9BEB161BB15F4A00AED473 /* AppDelegate.m in Sources */,
 				2DB2EA291BECBE6700D58F6A /* UIView+MJExtension.m in Sources */,

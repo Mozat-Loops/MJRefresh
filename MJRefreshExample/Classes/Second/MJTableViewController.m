@@ -20,6 +20,7 @@
 #import "MJDIYHeader.h"
 #import "MJDIYAutoFooter.h"
 #import "MJDIYBackFooter.h"
+#import "MLRefresh.h"
 
 static const CGFloat MJDuration = 2.0;
 /**
@@ -128,6 +129,20 @@ static const CGFloat MJDuration = 2.0;
     // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
     self.tableView.mj_header = [MJDIYHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
     [self.tableView.mj_header beginRefreshing];
+}
+
+- (void)example07
+{
+	// 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
+	self.tableView.mj_header = [MLLogoRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+	[self.tableView.mj_header beginRefreshing];
+}
+
+- (void)example08
+{
+	// 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
+	self.tableView.mj_header = [MLDotsRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+	[self.tableView.mj_header beginRefreshing];
 }
 
 #pragma mark UITableView + 上拉刷新 默认
@@ -276,6 +291,14 @@ static const CGFloat MJDuration = 2.0;
     
     // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadMoreData方法）
     self.tableView.mj_footer = [MJDIYBackFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+}
+
+- (void)example22
+{
+	[self example01];
+
+	// 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadMoreData方法）
+	self.tableView.mj_footer = [MLDotsRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
 }
 
 #pragma mark - 数据处理相关
